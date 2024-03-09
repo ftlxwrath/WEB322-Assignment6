@@ -12,6 +12,16 @@
     <!-- Component GRID SYSTEM -->
     <div class="container mx-auto p-4">
         <div class="overflow-x-auto">
+          <div class="hero bg-base-200 rounded-lg p-6">
+            <div class="hero-content text-center ">
+              <div class="max-w-md">
+                <h1 class="text-5xl font-bold">Countries</h1>
+      
+                <p class="py-6">Browse countries, i.e., United Nations member states.  Click the 'region' buttons to filter by regions such as: <a href="/un/countries?region=Africa" class="btn btn-primary btn-xs">Africa</a> <a href="/un/countries?region=Americas" class="btn btn-primary btn-xs">Americas</a></p>
+      
+              </div>
+            </div>
+          </div>
             <table class="table table-zebra">
 
                 <% countries.forEach(country=>{ %>
@@ -27,7 +37,7 @@
                     <td>
                           <div>
                             <h1 class="font-bold"><%=country.name%></h1>
-                            <a class="btn btn-primary" href="/un/countries?region=<%=country.region.name%>"><%=country.region.name%></a>
+                            <a class="btn btn-primary btn-xs" href="/un/countries?region=<%=country.region.name%>"><%=country.region.name%></a>
                           </div>
                         </div>
                     </td>
