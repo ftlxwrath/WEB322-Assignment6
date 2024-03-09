@@ -1,12 +1,15 @@
-/*********************************************************************************
-*  WEB322 – Assignment 03
-*  I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  No part 
-*  of this assignment has been copied manually or electronically from any other source 
-*  (including 3rd party web sites) or distributed to other students.
+
+/********************************************************************************
+*  WEB322 – Assignment 04
 * 
-*  Name: Mohammed Abbas Ali   Student ID: 123603219       Date: February 03, 2024
+*  I declare that this assignment is my own work in accordance with Seneca's
+*  Academic Integrity Policy:
+* 
+*  https://www.senecacollege.ca/about/policies/academic-integrity-policy.html
+* 
+*  Name: Mohammed Abbas Ali   Student ID: 123603219     Date: 8th March,2024
 *
-*  Online (Cyclic) Link: https://gold-friendly-jellyfish.cyclic.app/
+*  Published URL:  https://crabby-crow-long-johns.cyclic.app
 *
 ********************************************************************************/
 

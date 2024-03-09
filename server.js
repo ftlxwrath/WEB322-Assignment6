@@ -1,12 +1,15 @@
-/*********************************************************************************
+
+/********************************************************************************
 *  WEB322 – Assignment 04
-*  I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  No part 
-*  of this assignment has been copied manually or electronically from any other source 
-*  (including 3rd party web sites) or distributed to other students.
 * 
-*  Name: Mohammed Abbas Ali   Student ID: 123603219     Date: 
+*  I declare that this assignment is my own work in accordance with Seneca's
+*  Academic Integrity Policy:
+* 
+*  https://www.senecacollege.ca/about/policies/academic-integrity-policy.html
+* 
+*  Name: Mohammed Abbas Ali   Student ID: 123603219     Date: 8th March,2024
 *
-*  Online (Cyclic) Link: 
+*  Published URL:  https://crabby-crow-long-johns.cyclic.app
 *
 ********************************************************************************/
 
