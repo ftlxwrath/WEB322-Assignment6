@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>UN Countries</title>
+</head>
+<body>
+    <!-- Component NAV BAR -->
+    
+    <%- include('partials/navbar', {page: '/home'}) %>
+
+    <!-- Component GRID SYSTEM -->
+    <div class="container mx-auto">
+
+      <div class="grid grid-cols-1 mb-4">
+        <div class="border-2 rounded-box p-2">UN Countries</div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+        <!-- Cards​ Brazil-->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-full" src="https://flagcdn.com/w320/br.png" alt="Brazil" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Brasil</h2>
+            <p>Federative Republic of Brazil</p>
+            <div class="card-actions justify-end">
+              <button onclick="window.location.href='/un/countries/br'" class="btn btn-primary">About</button>
+            </div>
+          </div>
+        </div>
+        <!-- Cards​ Russian-->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-full" src="https://flagcdn.com/w320/ru.png" alt="Russian" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Russian</h2>
+            <p>Russian Federation</p>
+            <div class="card-actions justify-end">
+              <button onclick="window.location.href='/un/countries/ru'" class="btn btn-primary">About</button>
+            </div>
+          </div>
+        </div>
+      <!-- Cards​ India-->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-full" src="https://flagcdn.com/w320/in.png" alt="India" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">India</h2>
+            <p>Republic of India</p>
+            <div class="card-actions justify-end">
+              <button onclick="window.location.href='/un/countries/in'" class="btn btn-primary">About</button>
+            </div>
+          </div>
+        </div>
+      <!-- Cards​ China-->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-full" src="https://flagcdn.com/w320/cn.png" alt="China" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">China</h2>
+            <p>People's Republic of China</p>
+            <div class="card-actions justify-end">
+              <button onclick="window.location.href='/un/countries/cn'" class="btn btn-primary">About</button>
+            </div>
+          </div>
+        </div>
+      <!-- Cards​ China-->
+      <div class="card w-96 bg-base-100 shadow-xl">
+        <figure>
+          <img class="w-full" src="https://flagcdn.com/w320/za.png" alt="South Africa" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">South Africa</h2>
+          <p>Republic of South Africa</p>
+          <div class="card-actions justify-end">
+            <button onclick="window.location.href='/un/countries/za'" class="btn btn-primary">About</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

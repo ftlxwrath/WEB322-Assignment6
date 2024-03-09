@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>country</title>
+</head>
+<body>
+    <!-- Component NAV BAR -->
+    <%- include('partials/navbar', {page: ''}) %>
+    <!-- Component GRID SYSTEM -->
+    <div class="container mx-auto p-4">
+        <div class="hero bg-base-200 rounded-lg p-6">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-5xl font-bold"><%=country.name%></h1>
+                <p class="py-6">Below you will find the information for the country</p>
+                <p><%=country.name%></p>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <img class="w-full rounded-lg shadow-2xl" src="<%=country.flag%>" alt="https://flagcdn.com/w320/cn.png flag">
+      
+            </div>
+            <div class="prose">
+      
+              <p>
+                <span class="font-bold">Country Name: </span> <%=country.name%> <br>
+                <span class="font-bold">Official Name: </span> <%=country.official%> <br>
+                <span class="font-bold">Native Name: </span> <%=country.nativeName%> <br>
+                <span class="font-bold">Region: </span> <%=country.region.name%> <br>
+                <span class="font-bold">Alpha 2 Code: </span> <%=country.a2code%> <br>
+                <span class="font-bold">Capital: </span> <%=country.capital%> <br>
+                <span class="font-bold">Population: </span> <%=country.population%> <br>
+                <span class="font-bold">Page On Wikipedia: </span> <a href="<%=country.wikipediaURL%>" target="_blank" class="btn btn-xs"><%=country.wikipediaURL%></a><br><br>
+      
+                <span id="quote"></span>
+                <br><br>
+                <a class="btn btn-primary btn-sm" href="#" onclick="history.back(); return false;">RETURN</a>
+              </p>
+      
+            </div>
+      
+          </div>  
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=>{
+    
+            /* TODO: "fetch" the data at: https://quotable.io/random and update an element in the DOM with the "content" and "author" */
+            fetch('https://quotable.io/random')
+                .then((response) => response.json())
+                .then((json) => {
+                    console.log(json);
+                    document.getElementById("quote").innerHTML = `"${json.content}"<br>- <em>${json.author}</em>`;    
+
+            });
+        });
+    </script>
+    
+</body>
+</html>

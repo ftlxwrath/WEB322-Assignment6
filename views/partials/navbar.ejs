@@ -1,0 +1,24 @@
+<div class="navbar">
+    <div class="flex-1">
+      <a class="btn btn-ghost normal-case text-xl" href="/">UN Member States</a>
+    </div>
+    <div class="navbar-center hidden sm:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a class="<%= (page == "/home") ? 'active' : '' %>" href="/">UN Countries</a></li>
+        <li><a class="<%= (page == "/un/countries") ? 'active' : '' %>" href="/un/countries"> All Countries </a></li>
+        <li><a class="<%= (page == "/about") ? 'active' : '' %>" href="/about">About</a></li>
+        <li>
+          <details>
+            <summary>Region</summary>
+            <ul class="p-2 bg-base-100 right-0">
+              <li><a class="<%= (page == "/un/countries") ? 'active' : '' %>" href="/un/countries?region=Africa">Africa</a></li>
+              <li><a class="<%= (page == "/un/countries") ? 'active' : '' %>" href="/un/countries?region=Americas">Americas</a></li>
+              <li><a class="<%= (page == "/un/countries") ? 'active' : '' %>" href="/un/countries?region=Asia">Asia</a></li>
+              <li><a class="<%= (page == "/un/countries") ? 'active' : '' %>" href="/un/countries?region=Europe">Europe</a></li>
+              <li><a class="<%= (page == "/un/countries") ? 'active' : '' %>" href="/un/countries?region=Oceania">Oceania</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </div>
+  </div>
