@@ -33,6 +33,8 @@ unCountriesData.initialize().then(() => {
 // Define the public directory like STATIC
 app.use(express.static('public'));
 
+app.use(express.urlencoded({extended:true}));
+
 // Setting the routes
 app.get("/", (req, res) => {
     res.render("home");
@@ -68,6 +70,25 @@ app.get("/un/countries/:countryCode", (req, res) => {
     .catch(error => res.status(404).render("404", {message: "I'm sorry, we're unable to find what you're looking for"}));
 });
 
+app.get("/un/addCountry", (req, res) => {
+    unCountriesData.getAllRegions()
+        .then(regions => {
+            res.render("addCountry", { regions: regions });
+        })
+        .catch(err => {
+            res.status(500).render("500", { message: `I'm sorry, but we have encountered the following error: ${err}` });
+        });
+});
+
+app.post("/un/addCountry", (req, res) => {
+    unCountriesData.addCountry(req.body)
+        .then(() => {
+            res.redirect("/un/countries");
+        })
+        .catch(err => {
+            res.status(500).render("500", { message: `I'm sorry, but we have encountered the following error: ${err}` });
+        });
+});
 
 
 app.use((req, res) => {
